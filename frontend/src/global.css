@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap'); /* inportação da FONTE robot baixado pelo google (link: https://fonts.google.com/?selection.family=Roboto:400,500,700) */
+
+* { /* Zerando de CSS para depois personalidar sem somar com as configurações padrões do CSS*/
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; /* faz com que os paddings dos elementos sejam anexados na sua largura e altura*/
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /* propriedade: ele da uma melhorada na visualização da font do goolge chrome */
+}
+
+input, button, textarea { /* estes atributos por padrão não pegam a fonte do body acima*/
+    font: 400 18px Roboto, sans-serif;
+}
+
+button {
+    cursor: pointer; /* cursor personalizado */
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+form textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 140px;  
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+}
+
+.button {
+    width: 100%;
+    height: 60px;
+    background: #e02041;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s; /* tempo em segundo corrido para faezr o efeito completo do filtro */
+}
+
+.button:hover { /* hover: flutuar | quando eu passa o mouse em cima do botão*/
+    filter: brightness(90%); /* filtro de claridade de 90% menos clara*/
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s; /* tempo da imagem fazer efeito da opacidade completa*/ 
+}
+
+.back-link svg { /* usa-se "SVG" para poder personalizar os icones do pacote */
+    margin-right: 8px;
+}
+
+.back-link:hover { /* quando passar por cima do link */
+    opacity: 0.8; /* quanto maior for valor mais opaco é */
+}

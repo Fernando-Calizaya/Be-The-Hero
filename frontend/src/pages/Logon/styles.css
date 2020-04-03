@@ -1,0 +1,25 @@
+.logon-container { /* className da div no arquivo "index.js" -> esta começa com .className */
+    width: 100%; /* largura de 100 % */  /*  */
+    max-width: 1120px; /* porem no máximo de 1120px */
+    height: 100vh; /* para que ocupe a altura toda do corpo */
+    margin: 0 auto; /* deixar o conteudo sempre centralizado */
+
+    display: flex; /* todos os item que estão na classe "div logon-conteiner" ficam um lado do outro por meio do display flex*/
+    align-items: center; /* vai alinhar os item verticalmente ao centro */
+    justify-content: space-between; /* aidciona espaçamento no meio entre os itemns */
+}
+
+.logon-container section.form {
+    width: 100%; /* questão de responsividade depois */
+    max-width: 350px; /* questão de responsividade depois */
+    margin-right: 30px; /* espaçamento entre os itens  */
+}
+
+.logon-container section.form form { /* formulario */
+    margin-top: 100px;
+}
+
+.logon-container section.form form h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}

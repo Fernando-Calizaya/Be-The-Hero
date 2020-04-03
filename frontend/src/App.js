@@ -1,25 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // este ambiente esta com "live relout" transmição automatica com a page client
+import './global.css'
+import Routes from './routes' // importanto a primeira rota "Logon"
 
+//Este HTML integrado no JavaScript se chama: JSX
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( // retornará a primeira página de Logon que é representada como "primeira rota" feita até agora
+   <Routes /> // mesma coisa que <Routes> </Routes>
   );
 }
 

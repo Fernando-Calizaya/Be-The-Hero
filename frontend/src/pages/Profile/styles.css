@@ -1,0 +1,98 @@
+.profile-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.profile-container header {
+    display: flex; /* deixa os itens um lado do outro */   
+    align-items: center; /* alinha todos os itens */
+}
+
+.profile-container header span {  /* aumenta fonte e traz a esquerda o texo */
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.profile-container header img {  /* dimuir tamanho da imgem */
+    height: 64px;
+}
+
+.profile-container header .button {  /* diminuir comprimento do botão */
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+
+.profile-container header button {  /* aumento do comprimento do botão de saída */
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.profile-container header button:hover {  /* Quando pasar  um mouse por cima */
+    border-color: #999;
+}
+
+.profile-container h1 { /* titulo */
+    margin-top: 80px;
+    margin-bottom: 24px;
+} 
+
+.profile-container ul { /* lista ordena */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas com uma unidade flexivel OU grid-template-columns: repeat(2, 1fr) OBS: só funciona caso tiver tiver neste bloco "display: grid;" */ 
+    grid-gap: 24px;  /* distanciamento entre as todas colunas (vertical e horizontal) */
+    list-style: none; /* nenhuma lista ou seja tira as bolotas (ponto) */
+}
+
+.profile-container ul li { /* em cada elemento opções*/
+    background: #fff;  /* fundo branco */
+    padding: 24px;    /* preenchimento */
+    border-radius: 8px; /* pontas arredondadas */
+    position: relative; 
+}
+
+.profile-container ul li button { /* colocou o botão de "apagar caso" total a direita parte superior*/
+    position: absolute; 
+    right: 24px;
+    top: 24px;
+    border: 0; /* zera as bordas do icone */ 
+}
+
+.profile-container ul li button:hover { /* ao colocar o mouse por cima dar opacidade */
+    opacity: 0.8; /* opacidade de 80% */
+}
+
+.profile-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.profile-container ul li p + strong {
+    margin-top: 32px;
+}
+
+.profile-container ul li p {
+    color: 737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
